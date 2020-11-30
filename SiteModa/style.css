@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #000;
+    height: 130px;
+    color: #ffffff;
+    display: flex;
+}
+
+.header-top {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: solid 3px #ffffff;
+}
+
+.header-top img {
+    width: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-promo {
+    flex: 1;
+    padding-left: 0px;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.header-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right-register {
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.header-right-account {
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-right-bag {
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right-bag img {
+    width: 50px;
+}
+
+.menu {
+    width: 100vw;
+    height: 40px;
+    background-color: #000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-options {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu-options li {
+    padding: 0 10px;
+}
