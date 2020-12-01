@@ -90,4 +90,49 @@ body {
 
 .menu-options li {
     padding: 0 10px;
+    margin-left: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.menu-options li:hover {
+    color: rgb(197, 81, 187);
+    font-weight: bold;
+}
+
+.menu-right {
+    padding-top: 8px;
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 5px;
+}
+
+#busca {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+#busca::placeholder {
+    color: #ffffff;
+    opacity: .5;
+}
+
+.search-button {
+    font-size: 18px !important;
+    cursor: pointer;
+}
+
+.sliders {
+    width: 100vw;
+    height: calc(100vh - 170px);
+    background-color: #000;
+}
+
+.sliders img {
+    width: 100vw;
+    height: calc(100vh - 170px);
 }
