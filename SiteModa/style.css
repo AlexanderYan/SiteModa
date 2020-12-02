@@ -240,6 +240,7 @@ nav {}
 }
 
 .slide-point {
+    padding-top: 25px;
     display: flex;
     list-style: none;
     justify-content: center;
@@ -249,8 +250,8 @@ nav {}
 .little-pointer1,
 .little-pointer2,
 .little-pointer3 {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     margin-right: 20px;
     background-color: rgb(5, 5, 5);
 }
