@@ -72,7 +72,9 @@ body {
     width: 50px;
 }
 
-nav {}
+nav {
+    z-index: 99999;
+}
 
 .menu {
     position: sticky;
@@ -232,6 +234,61 @@ nav {}
     font-weight: bold;
 }
 
+.slideshow-container {
+    background-color: crimson;
+    top: 20px;
+    max-width: 100vw;
+    height: calc(100vh - 170px);
+    position: relative;
+    margin: auto;
+}
+
+
+/* Botões de Próximo e voltar */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Posição botão próximo */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Efeito cor dos botões */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
 .slider-pointer {
     display: flex;
     justify-content: center;
@@ -297,32 +354,20 @@ nav {}
     margin-left: 110px;
 }
 
-.links {
+#links {
     color: #ffffff;
     line-height: 50px;
     position: relative;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    left: -18px;
 }
 
-.sub-links {
-    background-color: #000000;
-    display: none;
-    float: left;
-    height: auto;
-    padding: 5px 20px 10px;
+#sublinks {
+    background-color: #ca1919;
     position: absolute;
-    top: 50px;
     transition: all 200ms;
-    width: 193px;
-    z-index: 99999;
-}
-
-.links:hover+.sub-links {
-    display: block;
-    color: red;
+    width: 100px;
+    height: 100px;
+    flex-direction: row;
+    list-style: none;
 }
