@@ -30,9 +30,11 @@
                     <li>COLEÇÃO NOVA</li>
                     <li class="menu-coisa">ACESSÓRIOS
                         <ul>
-                            <ul id="div1" style="display: none;">
-                                <li id="div1">.</li>
-                                <li id="div1">.</li>
+                            <ul id="links" style="display: none;">
+                                <li id="sublinks">UM</li>
+                                <li id="sublinks">DOIS</li>
+                                <li id="sublinks">DOIS</li>
+                                <li id="sublinks">DOIS</li>
                             </ul>
                         </ul>
                     </li>
@@ -49,11 +51,25 @@
             </div>
         </nav>
         <main>
-            <div class="sliders">
-                <div class="slider" style="background-image: url(./images/slider1.jpg);"> </div>
-                <div class="slider">...</div>
-                <div class="slider">...</div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="./images/slider1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./images/slider2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./images/slider3.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
             </div>
+            <br>
         </main>
         <main>
             <div class="sliders-2">
